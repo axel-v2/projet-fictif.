@@ -1,0 +1,191 @@
+    1  ls
+    2  cd quests/
+    3  lq
+    4  ls
+    5  cd shell/
+    6  ls
+    7  cd planets/
+    8  lq
+    9  ls
+   10  clear
+   11  cd ..
+   12  rmdir -r planets/
+   13  rmdir planets/
+   14  rmdir -rf planets/
+   15  rmdir planets/
+   16  rmdir -r planets/
+   17  rmdir --help
+   18  clear
+   19  rmdir -p planets/
+   20  rmd -p planets/
+   21  rm planets/
+   22  rm -rf planets/
+   23  ls
+   24  rm -rf planets.zip 
+   25  ls
+   26  clear
+   27  curl --ssl-no-revoke -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
+   28  unzip planets.zip
+   29  cd planets/
+   30  mkdir real fictional inhabited
+   31  cd real/
+   32  mkdir terrestrial gas-giants dwarf-planets
+   33  mv ../mercury.jpeg ../earth.jpeg ../pluto.jpeg ../jupiter.jpeg ../venus.jpeg ../mars.jpeg ../uranus.jpeg ../neptune.jpeg ../saturn.jpeg .
+   34  ls
+   35  mv ../arrakis.jpeg ../cybertron.jpeg ../coruscant.jpeg ../fictional/
+   36  ls ../fictional/
+   37  cp earth.jpeg ../fictional/arrakis.jpeg ../fictional/cybertron.jpeg ../fictional/coruscant.jpeg ../inhabited/
+   38  ls ../inhabited/
+   39  mv mercury.jpeg earth.jpeg venus.jpeg mars.jpeg terrestrial/
+   40  mv jupiter.jpeg uranus.jpeg neptune.jpeg saturn.jpeg gas-giants/
+   41  mv pluto.jpeg dwarf-planets/
+   42  rm -rf dwarf-planets/
+   43  ls
+   44  clear
+   45  cd ~
+   46  ls
+   47  clear
+   48  curl -o Unix_commands.md https://gist.githubusercontent.com/phaneendra/3804036/raw/f124b9f7703114d6be22f55e775cd2d015a45a91/UnixCommands.md
+   49  cat Unix_commands.md
+   50  ls ~ > home-contents.txt
+   51  cat
+   52  wc langages.txt
+   53  curl https://www.data.gouv.fr/s/resources/liste-de-prenoms/20141127-154433/Prenoms.csv -o Prenoms.csv
+   54  ls
+   55  cat Prenoms.csv 
+   56  clear
+   57  wc Prenoms.csv 
+   58  sort Prenoms.csv 
+   59  clear
+   60  grep fr Prenoms.csv 
+   61  grep french Prenoms.csv 
+   62  pwd
+   63  mkdir test-text
+   64  grep french Prenoms.csv > test-text/
+   65  rm -rf test-text/
+   66  mkfile test-text
+   67  mkfiles test-text
+   68  touch test-text
+   69  grep french Prenoms.csv > test-text
+   70  grep french Prenoms.csv > test-text.txt
+   71  grep french Prenoms.csv < test-text.txt
+   72  cat test-text.txt
+   73  clear
+   74  man wc
+   75  wc -l
+   76  grep french Prenoms.csv < test-text.txt | wc 
+   77  man sort
+   78  rm -rf test-text
+   79  touch final-test
+   80  head 10 Prenoms.csv 
+   81  grep m french Prenoms.csv | cat
+   82  clear
+   83  grep m french Prenoms.csv
+   84  clear
+   85  grep french Prenoms.csv
+   86  clear
+   87  grep f;french Prenoms.csv
+   88  grep "f" "french" Prenoms.csv
+   89  clear
+   90  cat final-test 
+   91  cat final-test.txt 
+   92  grep "f french" Prenoms.csv
+   93  grep f french Prenoms.csv
+   94  clear 
+   95  man grep
+   96  cd ~
+   97  ls
+   98  cd quests/shell/
+   99  lq
+  100  ***ls
+  101  ls
+  102  cd planets/
+  103  ls
+  104  find
+  105  cd ~
+  106  ls
+  107  cat final-test 
+  108  rm -rf final-test test-text.txt 
+  109  ls
+  110  touch final-test.txt
+  111  curl "https://gist.githubusercontent.com/bhubr/bc3a21a0202109beeb31c4a677e0461b/raw/d8805eb82e8aabffab3b0163596c734f376617d0/wilders.csv"
+  112  ls
+  113  curl https://gist.githubusercontent.com/bhubr/bc3a21a0202109beeb31c4a677e0461b/raw/d8805eb82e8aabffab3b0163596c734f376617d0/wilders.csv
+  114  pwd
+  115  clear
+  116  ls
+  117  ls -a
+  118  wget https://gist.githubusercontent.com/bhubr/bc3a21a0202109beeb31c4a677e0461b/raw/d8805eb82e8aabffab3b0163596c734f376617d0/wilders.csv
+  119  ls
+  120  Berta,Salas,Madrid,Spain,2019,Java
+  121  Nora,Alfonso,Madrid,Spain,2019,PHP
+  122  Mireia,Delatorre,Madrid,Spain,2019,PHP
+  123  David,Vergara,Madrid,SpaBerta,Salas,Madrid,Spain,2019,Java
+  124  Nora,Alfons
+  125  clear
+  126  grep "php" wilders.csv | grep "France" | grep "2019"
+  127  grep "php" wilders.csv
+  128  grep wilders.csv 
+  129  WC wilders.csv 
+  130  wc wilders.csv 
+  131  head wilders.csv 10
+  132  grep France wilders.csv 
+  133  clear
+  134  grep php wilders.csv | grep France | grep 2019
+  135  grep 2019 wilders.csv
+  136  clear
+  137  grep 2019 wilders.csv | sort
+  138  clear
+  139  grep 2019 wilders.csv | grep france
+  140  grep 2019 wilders.csv | grep France
+  141  CLEAR
+  142  clear
+  143  grep 2019 wilders.csv | grep France | sort
+  144  clear
+  145  grep 2019 wilders.csv | grep France | grep PHP
+  146  clear
+  147  grep 2019 wilders.csv | grep France | grep PHP | sort
+  148  clear
+  149  pwd
+  150  clear
+  151  touch php_france_2019.csv
+  152  grep 2019 wilders.csv | grep France | grep PHP | sort < php_france_2019.csv 
+  153  wc php_france_2019.csv 
+  154  grep 2019 wilders.csv | grep France | grep PHP | sort < php_france_2019.csv 
+  155  wc php_france_2019.csv 
+  156  grep 2019 wilders.csv | grep France | grep PHP | sort
+  157  head final-test.txt 
+  158  wc final-test.txt 
+  159  head wilders.csv 10 | cat > final-test.txt 
+  160  head wilders.csv | cat > final-test.txt 
+  161  wc final-test.txt 
+  162  cat final-test.txt 
+  163  clear
+  164  grep 2019 wilders.csv | grep France | grep PHP | sort | cat > php_france_2019.csv 
+  165  head php_france_2019.csv 
+  166  touch javascript_biarritz_toulouse.csv
+  167  grep Javascript wilders.csv | grep Toulouse | grep Biarritz | cat
+  168  grep Javascript wilders.csv | grep Toulouse | grep Biarritz
+  169  grep Javascript wilders.csv
+  170  grep Javascript wilders.csv | cat
+  171  head wilders.csv 
+  172  grep JavaScript wilders.csv | cat
+  173  clear
+  174  grep JavaScript wilders.csv | grep Toulouse | grep Biarritz | cat
+  175  grep JavaScript wilders.csv | grep Toulouse | grep Biarritz
+  176  grep JavaScript wilders.csv | grep Toulouse
+  177  grep JavaScript wilders.csv | grep -e "Toulouse" -e "Biarritz"
+  178  clear
+  179  grep JavaScript wilders.csv | grep -e "Toulouse" -e "Biarritz" | cat > javascript_biarritz_toulouse.csv 
+  180  head javascript_biarritz_toulouse.csv 
+  181  grep JavaScript wilders.csv | grep -e "Toulouse" -e "Biarritz" | sort | cat > javascript_biarritz_toulouse.csv 
+  182  head javascript_biarritz_toulouse.csv 
+  183  man history
+  184  history
+  185  man tail 
+  186  tail 10 wilders.csv 
+  187  tail wilders.csv 20
+  188  tail 20 wilders.csv 
+  189  tail -n 20 wilders.csv 
+  190  touch history.txt
+  191  history | cat > history.txt 
